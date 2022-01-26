@@ -11,7 +11,8 @@ body{
 
 }
 
-/* BARRE DE NAVIGATION */ 
+/* BARRE DE NAVIGATION 
+--------------------------------------------------------*/ 
 
 nav{
     position: fixed;
@@ -122,7 +123,8 @@ nav .logo-perso{
 
 }
 
-/* MEDIA QUERIES NAV BARRE */ 
+/* MEDIA QUERIES NAV BARRE 
+------------------------------------------------------*/ 
 
 @media screen and (max-width:850px) {
     .logo-menu{
@@ -152,12 +154,12 @@ nav .logo-perso{
     
 }
 
-/* Accueil*/
+/* Accueil
+----------------------------------------------------------*/
 
 .home{
     width: 100%;
     height: auto;
-    position: relative;
 }
 
 .home-about{
@@ -174,7 +176,6 @@ nav .logo-perso{
 .home-text{
     width: 60%;
     align-self: center;
-
 }
 
 .home-text h3{
@@ -182,28 +183,27 @@ nav .logo-perso{
     text-shadow: 6px 8px 10px rgb(155, 155, 155);
     letter-spacing: 5px;
     color: #626262;
-
 }
 
 .home-text p{
     font-size: 1.2rem;
     color: #626262;
-
 }
 
 .home-text-resume p{
     font-size: .6rem;
     text-transform: initial;
     padding: 0 20%;
-
 }
 
 .home-about img{
-    box-shadow: 20px 5px 10px rgb(170, 170, 170);
+    box-shadow: 20px 5px 10px #aaaaaa;
     border-right: 1px solid #333;
     border-radius: 50% 50% 10% 0 / 50% 50% 10% 0;
 }
 
+/* Media queries partie accueil 
+-----------------------------------------------------------*/ 
 
 @media screen and (max-width: 970px) {
     .home-about{
@@ -229,7 +229,6 @@ nav .logo-perso{
         font-size: .4rem;
         text-transform: initial;
         padding: 0 20%;
-    
     }
     .home-about img{
         width: 200px;
@@ -239,6 +238,7 @@ nav .logo-perso{
         border-radius: 50% 50% 0 0 / 50% 50% 0 0;
         box-shadow: 25px -5px 0px  rgba(0, 0, 0, .1);
     }
+
 }
 
 @media screen and (max-width: 500px){
@@ -253,114 +253,125 @@ nav .logo-perso{
         font-size: .4rem;
         text-transform: initial;
         padding: 0 10%;
-    
     }
-
+    .home-about img{
+        width: 130px;
+    }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TEST CERCLE */
+/* A propos  / TITRE = Pour tout savoir 
+ --------------------------------------------------------------
+*/
 
 .container{
-    width: 800px;
-    height: 800px;
-    margin: 10px auto;
-    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px;
 }
 
-.contain-cercle{
+.section-container {
+    width: 100%;
+    height: 100%;
+    font-family: nanuto;
+}
 
+.section-container h3{
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5rem;
+    font-family: dancing script;
+    font-size: 3rem;
+}
+.section-container h3::after{
+    content: '';
+    display: block;
+    margin: 40px auto;
+    width: 80%;
+    height: 8px;
     border-radius: 9999px;
-    position: absolute;
-
+    background: #ffffff;
+    box-shadow: 0px 10px 10px 1px rgb(0, 0, 0);
 }
-
-.cercle1{
-    width: 210px;
-    height: 210px;
-    background: red;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
+.section-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-about-me{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 3px 3px 2px rgb(155, 155, 155);
+}
+.section-about-me h4{
+    text-align: center;
+    text-decoration: underline;
+    font-family: dancing script;
+    padding: 30px;
     
 
 }
-.cercle2{
-    width: 300px;
-    height: 300px;
-    background: blue;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    
-}
-.cercle3{
-    background: orange;
-    width: 160px;
-    height: 160px;
-    top: 35%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-.cercle4{
-    background: yellow;
-    width: 240px;
-    height: 240px;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
+.section-about-me p{
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 1px;
 
 }
-.cercle5{
-    background: blue;
-    width: 70px;
-    height: 70px;
-    top: 20%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+.section-about-future{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: -3px 3px 2px rgb(155, 155, 155);
+}
+
+.section-about-future h4 {
+    text-align: center;
+    font-family: dancing script;
+    padding: 30px;
+    text-decoration: underline;
 
 }
-.cercle6{
-    background: orange;
-    width: 40px;
-    height: 40px;
-    top: 70%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-
+.section-about-future p{
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 1px;
 }
-.cercle7{
-    background: yellow;
-    width: 80px;
-    height: 80px;
-    top: 20%;
-    left: 30%;
-    transform: translate(-50%, -50%);
 
+
+/* Media queries partie a propos 
+----------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .section-about{
+        width: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .section-about-future{
+        box-shadow: 0px 20px 5px 5px #aaa;
+        width: 100%;
+    }
+    .section-about-me{
+        box-shadow: 0px -20px 5px 5px #aaa ;
+        width: 100%;
+
+    }
+    hr{
+        width: 50%;
+    }
+}
+
+@media  screen and (max-width:520px) {
+    .section-about-future{
+        padding: 10px;
+    }
+    .section-about-me{
+        padding: 10px;
+
+    }
 }
