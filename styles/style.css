@@ -16,7 +16,6 @@ nav{
     width: 100%;
     height: 70px;
     z-index: 10;
-    background: rgba(63, 63, 63, .3);
     text-transform: uppercase;
 }
 nav .logo-perso{
@@ -43,9 +42,9 @@ nav .logo-perso{
 .list-nav li a{
     margin: 30px;
     font-weight: 900;
-    color: #ffffff;
+    color: #626262;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -64,8 +63,8 @@ nav .logo-perso{
 }
 
 .logo-menu{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     position: fixed;
     top: 0;
     right: 15px;
@@ -105,21 +104,18 @@ nav .logo-perso{
 .btn1.active .lines:nth-child(1){
     top: 18px;
     transform: rotate(135deg);
-    background: #fff;
 
 }
 
 .btn1.active .lines:nth-child(3){
     top: 18px;
     transform: rotate(-135deg);
-    background: #fff;
 
 }
 
 .btn1.active .lines:nth-child(2){
     opacity: 0;
     transform: rotate(-40deg) translateX(-100px);
-    background: #fff;
 
 
 }
@@ -129,14 +125,15 @@ nav .logo-perso{
 @media screen and (max-width:850px) {
     .logo-menu{
         display: block;
+        
     }
     .list-nav{
-        padding-top: 70px;
+        padding: 0;
         flex-direction: column;
         height: auto;
-        background: linear-gradient(to bottom, rgba(0, 0, 0,.9), rgb(190, 190, 190) );
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgb(190, 190, 190) );
         transition: all .6s ease-in-out;
-        transform: translateY(-100%);
+        transform: translateY(-110%);
     }
     .list-nav.active{
         transform: translateY(0);
@@ -146,10 +143,7 @@ nav .logo-perso{
         border-bottom: 1px solid #000;
         justify-content: center;
     }
-    .list-nav li:nth-child(1){
-        border-top: 1px solid #000;
 
-    }
     
 }
 
@@ -160,51 +154,104 @@ nav .logo-perso{
     height: auto;
     position: relative;
 }
-.carousel{
-    opacity: .8;
-}
 
 .home-about{
-    width: 90%;
+    width: 100%;
     height: auto;
     text-transform: uppercase;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 6px 8px 10px rgb(0, 0, 0);
-    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    z-index: 8;
     font-family: 'Merienda', cursive;
-    letter-spacing: 8px;
     text-align: center;
-    color: #fff;
+    color: #626262;
+    box-shadow: 1px 2px 3px rgba(82, 82, 82, 0.5);
 }
-
-.home-about h3{
-    display: block;
-    font-size: 50px;    
-}
-
-.home-about p{
-    line-height: 40px;
-    font-size: 20px;
-}
-
-.card-test{
-    width: 70%;
-    height: auto;
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    left: 2px;
+.home-text{
+    width: 60%;
+    align-self: center;
 
 }
 
-.carousel-indicators{
-    z-index: 10;
+.home-text h3{
+    font-size: 2.5rem;  
+    text-shadow: 6px 8px 10px rgb(155, 155, 155);
+    letter-spacing: 5px;
+}
+
+.home-text p{
+    font-size: 1.2rem;
+}
+
+.home-text-resume{
+}
+
+.home-text-resume p{
+    font-size: .6rem;
+    text-transform: initial;
+    padding: 0 20%;
+
+}
+
+.home-about img{
+    box-shadow: 20px 5px 10px rgb(170, 170, 170);
+    border-right: 1px solid #333;
+    border-radius: 50% 50% 10% 0 / 50% 50% 10% 0;
 }
 
 
+@media screen and (max-width: 970px) {
+    .home-about{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .home-text{
+        width: 100%;
+        position: relative;
+        top: 30%;
+        left: 30%;
+        transform: translate(-30%,-30%);
+    }
+    .home-text h3{
+        font-size: 2rem;  
+        letter-spacing: 5px;
+    }
+    .home-text p{
+        font-size: .8rem;
+    }
+    .home-text-resume p{
+        font-size: .4rem;
+        text-transform: initial;
+        padding: 0 20%;
+    
+    }
+    .home-about img{
+        width: 200px;
+        height: auto;
+        margin: 80px auto 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home-about img{
+        margin: 80px auto 0;
+    }
+    .home-text h3{
+        font-size: 1.2rem;  
+        letter-spacing: 5px;
+    }
+    .home-text p{
+        font-size: .6rem;
+    }
+    .home-text-resume p{
+        font-size: .4rem;
+        text-transform: initial;
+        padding: 0 10%;
+    
+    }
+
+}
 
 
 
