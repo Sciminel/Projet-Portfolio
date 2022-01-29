@@ -6,9 +6,13 @@ burger.addEventListener('click', () => {
     menuDeroulant.classList.toggle('active');
 })
 
+const bienvenu = document.querySelector('.title-custom');
 
-// Réduire le temps de défilement des images pour créer une fluidité 
-// d'une arriere map (exemple: load runner)
-const vitesseCarousel = document.querySelector('.carousel-inner');
-const imgCarousel = document.querySelector('.carousel-item');
-const active = document.querySelector('.active');
+//const popupName = prompt("Quel est votre nom ? (La donnée ne sera pas enregistré)");
+
+
+if(popupName){
+    bienvenu.innerHTML = `Bienvenu(e) ${popupName}`;
+}else{
+    bienvenu.innerHTML = `Bienvenu jeune inconnu !aaa`
+}
