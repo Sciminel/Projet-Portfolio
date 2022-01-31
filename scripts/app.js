@@ -16,11 +16,11 @@ btnGalerie.addEventListener('click', () => {
 
 const bienvenu = document.querySelector('.title-custom');
 
-// const popupName = prompt("Quel est votre nom ? (La donnée ne sera pas enregistré)");
+const popupName = prompt("Quel est votre nom ? (La donnée ne sera pas enregistré)");
 
 
-// if(popupName){
-//     bienvenu.innerHTML = `Bienvenu(e) ${popupName}`;
-// }else{
-//     bienvenu.innerHTML = `Bienvenu jeune inconnu !`
-// }
+if(popupName){
+    bienvenu.innerHTML = `Bienvenu(e) ${popupName}`;
+}else{
+    bienvenu.innerHTML = `Bienvenu jeune inconnu !`
+}
