@@ -635,7 +635,12 @@ hr{
 .galerie-card img{
     width: 100%;
     height: auto;
+    transition: all .3s ease-in-out;
 }
+.galerie-card:hover{
+    transform:scale(1.1);
+}
+
 
 .project-galerie .galerie-card .galerie-card-resume h4{
     padding: 5px;
