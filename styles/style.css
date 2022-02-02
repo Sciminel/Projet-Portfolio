@@ -1103,6 +1103,9 @@ textarea{
 /*Media queries du formulaire */
 
 @media screen and (max-width:520px) {
+    .section-container-contact form{
+        width: 80%;
+    }
     .section-container-contact h3{
         padding-top: 10px;
         font-size: 1.2rem;
@@ -1111,8 +1114,9 @@ textarea{
         font-size: 1rem;
     }
     .btn-form{
-        padding: 10px 10px;
+        padding: 10px 5px;
         font-size: .8rem;
+        background: rgb(185, 185, 185);
     }
     .section-container-contact .sous-title-btn{
         font-size: .6rem;
