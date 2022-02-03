@@ -632,7 +632,7 @@ hr{
 
 .project-galerie .galerie-card{
     width: 280px;
-    height: 350px;
+    height: auto;
     margin: 20px;
     overflow: hidden;
     flex-shrink: 0;
@@ -661,17 +661,17 @@ hr{
     text-align: justify;
 }
 
-.project-galerie .galerie-card .galerie-card-resume a{
+.project-galerie .galerie-card a{
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
     left: 200px;
     text-decoration: none;
     color: rgb(255, 0, 0);
     padding: 5px;
 }
-.project-galerie .galerie-card .galerie-card-resume a:hover{
-    text-decoration: underline;
+.project-galerie .galerie-card  a:hover{
     color: rgb(0, 0, 0);
+    text-decoration: line-through;
 }
 
 /* Responsive partie compétence et projets */ 
