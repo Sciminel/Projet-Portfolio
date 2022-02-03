@@ -286,6 +286,13 @@ nav .logo-perso{
     font-weight: 600;
     font-size: 2rem;
 }
+.section-container-about .title-custom::after{
+    content: ' Custom ?';
+    cursor: pointer;
+    display: block;
+    margin: 0px auto 0;
+    font-size: .6rem;
+}
 
 .section-container-about .sous-title-custom{
     text-align: center;
