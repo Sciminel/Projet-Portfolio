@@ -381,6 +381,13 @@ hr{
         font-size: 1.8rem;
         margin-bottom: 0;
     }
+    .section-container-about .title-custom::after{
+        content: '';
+        cursor: none;
+        display: none;
+        margin: 0;
+        font-size: 0;
+    }
     .section-container-about .sous-title-custom::after{
         width: 70%;
         margin-top: 100px;
