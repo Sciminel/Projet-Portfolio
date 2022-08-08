@@ -1111,6 +1111,13 @@ label{
 textarea{
     border-radius: 10px;
     padding: 10px;
+    outline: none;
+}
+
+#data{
+    font-size: .8rem;
+    text-align: left;
+    margin: 0;
 }
 
 .btn-form{
